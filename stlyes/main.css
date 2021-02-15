@@ -1,5 +1,13 @@
-form {
-    display: block;
+fieldset {
+    display: flex;
     flex-direction: column;
     margin-top: 0em;
+}
+
+header {
+    display: block;
+}
+
+footer {
+    display: block;
 }
