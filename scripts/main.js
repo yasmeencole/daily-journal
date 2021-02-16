@@ -1,5 +1,7 @@
-import {EntryListComponent} from "./enteries/JournalEntryList.js"
+import {entryList} from "./enteries/JournalEntryList.js"
+import {getEntries, useJournalEntries} from "./enteries/JournalDataProvider.js"
 
-EntryListComponent();
+entryList();
+getEntries, useJournalEntries();
 
 console.log('Daily Journal Yay!')

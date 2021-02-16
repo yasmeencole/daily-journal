@@ -1,19 +1,25 @@
 // JournalEntryList is responsible for rendering a list of journal entry components
 
-import { useJournalEntries } from "./JournalDataProvider.js"
+import { useJournal, getEntries  } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
-// DOM reference to where all entries will be rendered
-export const EntryListComponent = () => {
-    
-    const contentElement = document.querySelector(".journalEntryContainer")
-    const entriesArray = useJournalEntries()
+const contentElement = document.querySelector(".journalEntryContainer")
 
+export const entryList = () => {
+    getEntries()
+    .then(() => {
+        const entriesArray = useJournal()
+        render(entriesArray)
+    })
+}
+
+
+// DOM reference to where all entries will be rendered
+const render = (entriesCollection) => {
     let entriesHTMLRepresentation = ""
 
-    for (const entryObj of entriesArray) {
+    for (const entryObj of entriesCollection) {
         entriesHTMLRepresentation += JournalEntryComponent(entryObj)
-    
     }
 
     contentElement.innerHTML += `

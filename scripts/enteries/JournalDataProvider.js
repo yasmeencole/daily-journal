@@ -6,17 +6,21 @@
  *      the entries for different purposes.
  */
 
-// This is the original data.
-const journal = []
+let journal = []
 
+export const useJournal = () => journal.slice()
 
-export const useJournal = () => {
-    return journal.slice()
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+        .then(response => response.json()) 
+        .then(
+            parsedEntries => {
+                journal = parsedEntries
+        }
+        
+    )
 }
-/*
-    You export a function that provides a version of the
-    raw data in the format that you want
-*/
+
 export const useJournalEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>
