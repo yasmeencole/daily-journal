@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Journal</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="journal.css" />
+    <title>Yasmeen's Daily Journal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="stlyes/main.css" />
 </head>
 <body>
-    <h2>Daily Journal</h2>
+    <header>
+        <h1>Daily Journal</h1>
+        <p>By Yasmeen Cole</p>
+    </header>
     <form action="">
         <fieldset>
             <label for="journalDate">Date of Entry</label>
@@ -19,7 +22,7 @@
         </fieldset>
         <fieldset>
             <label for="journalEntry">Journal Entry</label>
-            <input type="text" name="journalEntry" id="journalEntry">
+            <input type="textarea" name="journalEntry" id="journalEntry">
         </fieldset>
 
         <fieldset>
@@ -29,9 +32,17 @@
             <option value="sad">Sad</option>
             <option value="frustrated">Frustrated</option>
             <option value="excited">Excited</option>
+            <option value="hopeful">Hopeful</option>
         </select>
         </fieldset>
         <input name="form" type="submit" value="Record Journal Entry"/>
     </form>
+    <section class="journalEntryContainer">
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 Yasmeen Cole</p>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

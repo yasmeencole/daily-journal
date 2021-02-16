@@ -1,0 +1,33 @@
+{
+    "entries": [
+
+        {
+            "id": "1",
+            "date": "07/24/2025",
+            "concept": "HTML & CSS",
+            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+            "mood": "Ok"
+        },
+        {
+            "id": "2",
+            "date": "02/15/2021",
+            "concept": "practicing things that have been covered",
+            "entry": "Today is a lab day because there is a snow storm moving across the US. Today I will be working on glassdale and daily journal.",
+            "mood": "hopeful"
+        },
+        {
+            "id": "3",
+            "date": "02/15/2021",
+            "concept": "practicing things that have been covered",
+            "entry": "Today I also would like to practice CSS.",
+            "mood": "happy"
+        },
+        {
+            "id": "4",
+            "date": "02/15/2021",
+            "concept": "practicing things that have been covered",
+            "entry": "I also would like to find better ways to work.",
+            "mood": "happy"
+        }
+    ]
+}
